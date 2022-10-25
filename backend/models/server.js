@@ -16,7 +16,7 @@ class Server{
 
 
         // routers path
-
+        
         this.userControllerPath = '/api/usuario';
     }
 
@@ -26,24 +26,12 @@ class Server{
 
     routes(){
 
-        this.app.get('/', (req, res)=> {
-            res.j('Hello World')
-          });
-
-
-
-        this.app.get('/api', (req, res)=> {
-            res.json(req);
-          });
-        this.app.post('/api', (req, res)=> {
-        res.json('{informacion');
-        });
-        this.app.put('/api', (req, res)=> {
-        res.json('{informacion');
-        });
-        this.app.delete('/api', (req, res)=> {
-        res.json('{informacion');
-        });
+        this.app.use( '/api/auth', require('../routes/auth'));
+        this.app.use( '/api/usuarios', require('../routes/user.router'));
+        
+        this.app.get('**', (req, res)=> {
+            res.status(404).json('Error');
+            });
     }
 
     listen(){
@@ -59,7 +47,6 @@ class Server{
 
         // lectura y parceo de body
         this.app.use(express.json());
-        this.app.use( '/api/usuarios', require('../routes/user.router'));
         // Archivos estaticos
         this.app.use(express.static('public'));
     }
