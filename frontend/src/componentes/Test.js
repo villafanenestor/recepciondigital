@@ -1,5 +1,6 @@
 import React from "react"
 import '../CSS/Test.css'
+import HideAndShowPass from "./HidePass/HideAndShowPass"
 import '../CSS/form.css'
 
  function Test() {
@@ -11,7 +12,8 @@ import '../CSS/form.css'
                 <div className='field padding-bottom--24'>
                     <label for="user">Usuario</label> <input type="user" name="usuario"></input><br></br>
                         <div>
-                            <label for="password">Contraseña</label> <input type="password" name="Contraseña"></input>
+                            <label for="password">Contraseña</label>
+                            <HideAndShowPass/>
                         </div>
                         <div class="reset-pass">
                       <a href="#">Olvidaste tu contraseña?</a>
