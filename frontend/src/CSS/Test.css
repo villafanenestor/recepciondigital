@@ -1,5 +1,5 @@
 .contenedor-test {
-    width: 1170px;
+    width: 880px;
     height: 368px;
     margin: 10px 10px 50px;
     display: flex;
@@ -13,6 +13,10 @@
     height: 100%;
     width: auto;
 }
+
+  h1 {
+      letter-spacing: -1px;
+  }
 
 .contenedor-texto-test{
     width: 100%;
