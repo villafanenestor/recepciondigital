@@ -68,14 +68,16 @@ const  userPut = async (req= request , res=response)=> {
     res.json(`Hello Put`)
 };
 
-const  userDelete = async(req= request , res=response)=> {
+const userDelete = async(req= request , res=response)=> {
     const uid = req.uid;
     console.log({uid});
     console.log('Eliminacion');
     const id = req.params.id;
-    await Usuario.findByIdAndUpdate(id, {estado: false});
-    res.status(204).send(
-        uid
+    const usuario = await Usuario.findByIdAndUpdate(id, {estado: false});
+    const usuarioAuth = req.usuarioAuth;
+    // console.log({usuario, usuarioAuth});
+    res.status(204).json({usuario}
+
     );
 };
 
