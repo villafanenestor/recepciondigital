@@ -9,12 +9,14 @@ function HideAndShowPass(){
     
     return(
         <div className="showpass">
-
-            <input type={show?"text":"password"} className='smartpass'/>
-
-            <label onClick={handleShow}>{show?"Esconder":"Mostrar"}</label>
+            
+                <input type={show?"text":"password"} className='smartpass'/>
+            
+                <label onClick={handleShow}>{show?"Esconder":"Mostrar"}</label>
+           
         </div>
 
         );
     }
+
 export default HideAndShowPass;

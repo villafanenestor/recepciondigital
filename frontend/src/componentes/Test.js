@@ -18,7 +18,8 @@ import '../CSS/form.css'
                         <div class="reset-pass">
                       <a href="#">Olvidaste tu contraseña?</a>
                     </div>
-                        <input type="submit" name="submit" value="Continue"></input>
+                        
+                        <input type="submit" name="submit" value="Continuar" ></input>
                 </div>
               </div>
              </form>
