@@ -16,16 +16,15 @@ const  userGet = async (req= request , res=response)=> {
     // .skip(Number( desde ))
     // .limit(Number( limit ));
 
-    // const total = Usuario.countDocuments();
-
-    const [usuarios, total] = await Promise.all(
+    
+    const [usuarios] = await Promise.all(
         [
             Usuario.find(query)
             .skip(Number( desde ))
             .limit(Number( limit )),
-            Usuario.countDocuments(query),
         ]
-    );
+        );
+    const total = usuarios.length;
     
     res.json({
         usuarios, total
@@ -69,11 +68,17 @@ const  userPut = async (req= request , res=response)=> {
     res.json(`Hello Put`)
 };
 
-const  userDelete = async(req= request , res=response)=> {
+const userDelete = async(req= request , res=response)=> {
+    const uid = req.uid;
+    console.log({uid});
     console.log('Eliminacion');
     const id = req.params.id;
-    await Usuario.findByIdAndUpdate(id, {estado: false});
-    res.status(204).send();
+    const usuario = await Usuario.findByIdAndUpdate(id, {estado: false});
+    const usuarioAuth = req.usuarioAuth;
+    // console.log({usuario, usuarioAuth});
+    res.status(204).json({usuario}
+
+    );
 };
 
 

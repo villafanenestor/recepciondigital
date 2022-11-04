@@ -26,7 +26,7 @@ class Server{
 
     routes(){
 
-        this.app.use( '/api/auth', require('../routes/auth'));
+        this.app.use( '/api/auth', require('../routes/auth.router'));
         this.app.use( '/api/usuarios', require('../routes/user.router'));
         
         this.app.get('**', (req, res)=> {
