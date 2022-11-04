@@ -1,7 +1,7 @@
 
 import './App.css';
 import Test from './componentes/Test'
-
+import './componentes/admin'
 
 function App() {
   return (
