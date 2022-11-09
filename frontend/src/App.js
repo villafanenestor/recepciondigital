@@ -1,17 +1,16 @@
 
 import './App.css';
-import Test from './componentes/Test'
-import Admin from './componentes/admin';
+import Page from './componentes/Page';
 
 function App() {
   return (
     <div className="App">
       <div>
-        <h1>Recepción Digital</h1>
-      
-        <Admin>
+        
+        <Page>
 
-        </Admin>
+        </Page>
+   
       </div>
     </div>
   );
