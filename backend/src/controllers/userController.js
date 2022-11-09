@@ -54,7 +54,7 @@ const  userPost =  async(req= request , res=response)=> {
 };
 
 const  userPut = async (req= request , res=response)=> {
-    console.log('Meotod de actualizar');
+    console.log('Metodo de actualizar');
     const id = req.params.id;
     const {password, google, email, ...resto} = req.body;
 
