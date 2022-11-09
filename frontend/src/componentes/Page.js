@@ -1,17 +1,22 @@
 import React from "react"
 import Test from "./Test";
+import Admin from "./admin";
 
  function Page() {
     return (
         <div>
-            <h1>Recepción Digital</h1>
-            <Test>
+            <div>
+                <h1>Recepción Digital</h1> 
+            </div>
+            <Admin>
+
+            </Admin>
                 
-            </Test>
+
         </div>
     )
 }
    
 
 
-export default Page;
+export default Page;    

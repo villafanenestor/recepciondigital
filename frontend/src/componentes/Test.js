@@ -4,8 +4,11 @@ import HideAndShowPass from "./HidePass/HideAndShowPass"
 import '../CSS/form.css'
 
  function Test() {
+
     return (
-        <div className='contenedor-test'>
+        
+        <div className='contenedor-test'> 
+          
             <img className='imagen-test' src={require("../images/recep.jpeg")} alt='imagen test'/>
              <form id="stripe-login"> 
                 <div className="">
