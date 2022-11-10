@@ -18,6 +18,25 @@ import "../CSS/Admin.css"
             <div className="rpropiedades">
                 <h1>Registrar Propiedades</h1>
             </div>
+            <div className="rform">
+                <form class="card-form">
+                <div class="input">
+                    <input type="text" class="input-field" value="Alexander Parkinson" required/>
+                    <label class="input-label">Full name</label>
+                </div>
+                            <div class="input">
+                    <input type="text" class="input-field" value="vlockn@gmail.com" required/>
+                    <label class="input-label">Email</label>
+                </div>
+                            <div class="input">
+                    <input type="password" class="input-field" required/>
+                    <label class="input-label">Password</label>
+                </div>
+                <div class="action">
+                    <button class="action-button">Get started</button>
+                </div>
+                </form>
+            </div>   
         </div>
     )
 }
