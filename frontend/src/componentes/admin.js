@@ -14,7 +14,9 @@ import "../CSS/Admin.css"
 
             <div className="logout">
                 <a href="#">Cerrar Sesion</a>
-
+            </div>
+            <div className="rpropiedades">
+                <h1>Registrar Propiedades</h1>
             </div>
         </div>
     )
