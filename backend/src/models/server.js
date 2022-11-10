@@ -3,9 +3,10 @@ const cors = require('cors');
 const { dbConection } = require('../database/config');
 
 
-class Server{
-    
-    constructor(){
+class Server {
+
+
+    constructor() {
         this.app = express();
         this.port = process.env.PORT;
         this.conectarDB();
@@ -16,32 +17,33 @@ class Server{
 
 
         // routers path
-        
+
         this.userControllerPath = '/api/usuario';
     }
 
-    async conectarDB(){
+    async conectarDB() {
         await dbConection();
     }
 
-    routes(){
+    routes() {
 
-        this.app.use( '/api/auth', require('../routes/auth.router'));
-        this.app.use( '/api/usuarios', require('../routes/user.router'));
-        
-        this.app.get('**', (req, res)=> {
+        this.app.use('/api/auth', require('../routes/auth.router'));
+        this.app.use('/api/usuarios', require('../routes/user.router'));
+
+
+        this.app.get('**', (req, res) => {
             res.status(404).json('Error');
-            });
+        });
     }
 
-    listen(){
-        this.app.listen(this.port, ()=>{
+    listen() {
+        this.app.listen(this.port, () => {
             console.log(`url: http://localhost:${this.port}/`)
         });
     }
 
 
-    middlewares(){
+    middlewares() {
         // Cors
         this.app.use(cors());
 

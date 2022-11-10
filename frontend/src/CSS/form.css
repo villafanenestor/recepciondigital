@@ -1,18 +1,17 @@
-* {
-
-    padding: 0;
-    margin: 0;
-    color: #1a1f36;
-    box-sizing: border-box;
-    word-wrap: break-;
-    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Ubuntu,sans-serif;
-    border: #1a1f36;
-  }
 
 
   label {
       margin-bottom: 10px;
       margin-top: 10px;
+  }
+
+  .elabel{
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    display: flex;
+      
   }
   .reset-pass a,label {
       font-size: 15px;
@@ -32,9 +31,10 @@
       line-height: 20px;
       padding: 6px 16px;
       width: 100%;
+      max-width:668px;
       min-height: 20px;
       border: unset;
-      border-radius: 4px;
+      border-radius: 10px;
       outline-color: rgb(84 105 212 / 0.5);
       background-color: rgb(255, 255, 255);
       box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
@@ -46,7 +46,7 @@
                   rgba(0, 0, 0, 0) 0px 0px 0px 0px;
   }
   
-  input[type="submit"] {
+  Button[type="button"] {
       background-color: #5334ed;
       box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
                   rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
@@ -61,7 +61,13 @@
       margin-top: 25px;
   }
   
- 
-  
+ Form.Control[type="password"]{
+    position: absolute;
+ }
 
+ .form{
+    position: relative;
+    width: 250px;
+    left: 25%;
+ }
  
