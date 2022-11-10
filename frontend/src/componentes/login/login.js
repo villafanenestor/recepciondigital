@@ -5,10 +5,12 @@ import { Container, Form, Button,} from "react-bootstrap";
 import '../../CSS/Test.css'
 //import HideAndShowPass from "../HidePass/HideAndShowPass"
 import '../../CSS/form.css'
-import {isNull} from "util";
-
+import Cookies from "universal-cookie"
+import { calcularExpiracionSesion  } from "../helper/helper";
+import {isNull} from 'util'
 
 const {APIHOST} = app
+const cookies = new Cookies();
 
 export default class login extends React.Component {
     constructor(props) {
@@ -27,14 +29,32 @@ export default class login extends React.Component {
         })
 
             .then((response) => {
-                if (isNull(response.data.token)){
-                    alert("Usuario y/o Contraseña invalidos");
+                
+                console.log(response);
+                if(isNull(response.data.token)){
+                    alert("Usuario no encontrado")
                 }else{
-
+                    cookies.set('_s',response.data.tokenInformation.token,{
+                        path:"/",
+                        expires: calcularExpiracionSesion(),
+                    });
                 }
+
+                
             })
             .catch((err) => {
-                console.log(err)
+                console.log(err);
+
+                const {response} = err;
+                const {data} = response;
+                const {errors} = data;
+                
+
+                if(response.status===400){
+                    alert(data.msg);
+                    alert(errors[0].msg)
+                }
+
             });
     }
 

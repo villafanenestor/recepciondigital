@@ -1,13 +1,10 @@
 import React from "react"
-import Test from "../Test";
-import Admin from "./admin";
+
+import Admin from "../Webs/admin";
 
  function Page() {
     return (
         <div>
-            <div>
-                <h1>Recepción Digital</h1> 
-            </div>
             <Admin>
 
             </Admin>
