@@ -15,7 +15,7 @@ import "../../CSS/Admin.css"
                         <ul className="slide">
                             <li><button>Propiedades</button></li>
                             <li><button>Operador</button></li>
-                            <li><button>RegistroVisitas</button></li>
+                            <li><button>Registro Visitas</button></li>
                         </ul>
                     </div>
                 </div>

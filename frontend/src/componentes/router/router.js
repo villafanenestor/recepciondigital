@@ -13,9 +13,9 @@ export default function AppRouter() {
             <Switch>
                 <Route exact path={["/", "/login"]} component={Login} />
                 <Route exact path={["/Inicio"]} component={Inicio} />
-                {/* <Route exact path={["/Page"]} component={Page} /> */}
+                <Route exact path={["/Page"]} component={Page} />
                 
-                <PrivateRoute exact path={"/Page"} component={Page} />
+                {/* <PrivateRoute exact path={"/Page"} component={Page} /> */}
 
                 <Route path="/*" component={() => (
                     <h1>
