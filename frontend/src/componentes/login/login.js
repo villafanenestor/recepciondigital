@@ -75,14 +75,14 @@ export default class login extends React.Component {
                             <Form.Group className="field padding-bottom--24" controlId="formBasicEmail">
                                 <Form.Label className="elabel">Email address</Form.Label>
                                 <Form.Control className="boxsize" placeholder="Email" onChange={(e) => this.setState({ usuarios: e.target.value })} />
-                                {this.state.usuarios}
+                                
 
                             </Form.Group>
 
                             <Form.Group className="field padding-bottom--24" controlId="formBasicPassword">
                                 <Form.Label >Password</Form.Label>
                                 <Form.Control type="password" placeholder="Password" onChange={(e) => this.setState({ password: e.target.value })} />
-                                {this.state.password}
+                                
 
                             </Form.Group>
 
