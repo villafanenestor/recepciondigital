@@ -11,11 +11,12 @@ export default function AppRouter() {
     return (
         <Router>
             <Switch>
+                <PrivateRoute exact path={["/Page"]} component={Page} />
                 <Route exact path={["/", "/login"]} component={Login} />
                 <Route exact path={["/Inicio"]} component={Inicio} />
-                <Route exact path={["/Page"]} component={Page} />
                 
-                {/* <PrivateRoute exact path={"/Page"} component={Page} /> */}
+                
+                
 
                 <Route path="/*" component={() => (
                     <h1>
@@ -29,7 +30,4 @@ export default function AppRouter() {
     );
 }
 
-// function  Home(){
-//     return <h2>Home</h2>
-// }
 

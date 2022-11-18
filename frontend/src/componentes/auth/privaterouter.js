@@ -16,7 +16,7 @@ export default class PrivateRoute extends React.Component {
 
     componentWillMount() {
         this.setState({
-            auth: checkAuth() && this.state.auth
+            auth: checkAuth() && !this.state.auth
         })
     }
     render() {
