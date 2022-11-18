@@ -6,7 +6,7 @@ import "../../CSS/Admin.css"
     return (
         <div>
             <div className="logout">
-                <a href="#">Cerrar Sesion</a>
+                Cerrar sesion
             </div>
 
             <div className="contenedor-admin">
