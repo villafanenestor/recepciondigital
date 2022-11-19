@@ -5,6 +5,7 @@ import Login from "../login/login";
 import Inicio from "../Webs/Inicio";
 import PrivateRoute from "../auth/privaterouter";
 import Page from "../Webs/Page"
+import AdminBuscar from "../admins/admins.buscar";
 
 export default function AppRouter() {
 
@@ -14,7 +15,7 @@ export default function AppRouter() {
                 <PrivateRoute exact path={["/Page"]} component={Page} />
                 <Route exact path={["/", "/login"]} component={Login} />
                 <Route exact path={["/Inicio"]} component={Inicio} />
-                
+                <PrivateRoute exact path={["/admins"]} component={AdminBuscar} />
                 
                 
 

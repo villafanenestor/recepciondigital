@@ -1,0 +1,21 @@
+#admins-buscarcontainer{
+    padding: 10px;
+}
+
+.react-bs-table-sizePerPage-dropdown .dropdown-toggle{
+    float: left ;
+    margin-bottom: 40px;
+
+}
+
+.table.table-bordered{
+    background-color:azure ;
+}
+
+.dropdown-menu{
+    background-color: bisque;
+}
+
+.dropdown-item{
+    color: black;
+}
