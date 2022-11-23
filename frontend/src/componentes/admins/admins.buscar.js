@@ -1,6 +1,6 @@
 import React from 'react';
 import './admins.buscar.css'
-import { request } from '../helper/helper'
+//import { request } from '../helper/helper'
 import { Container, Row, } from "react-bootstrap"
 import DataGrid from '../grid/grid';
 
@@ -15,20 +15,16 @@ const columns = [
         text: 'Nombre',
     },
     {
-        dataField: 'apellido_p',
-        text: 'Primer Apellido',
+        dataField: 'email',
+        text: 'Email',
     },
     {
-        dataField: 'telefono',
-        text: 'Telefono',
+        dataField: 'rol',
+        text: 'Rol',
     },
     {
-        dataField: 'mail',
-        text: 'Correo Electronico',
-    },
-    {
-        dataField: 'direccion',
-        text: 'Direccion',
+        dataField: 'estado',
+        text: 'Estado',
     }
     
 ];
@@ -43,9 +39,7 @@ export default class AdminBuscar extends React.Component {
         };
     }
 
-    componentDidMount() {
-        this.getData();
-    }
+    
 
     render() {
 

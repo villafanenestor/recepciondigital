@@ -1,9 +1,12 @@
 import React from 'react';
-import { request } from '../helper/helper'
+//import { request } from '../helper/helper'
 import BootstrapTable from 'react-bootstrap-table-next';
 import paginationFactory, { PaginationProvider, PaginationListStandalone, SizePerPageDropdownStandalone } from 'react-bootstrap-table2-paginator';
 import ToolkitProvider, { Search } from 'react-bootstrap-table2-toolkit/dist/react-bootstrap-table2-toolkit';
+import axios from 'axios';
+import app from '../../app.json'
 
+const { APIHOST } = app
 const { SearchBar } = Search;
 
 
@@ -17,10 +20,12 @@ export default class DataGrid extends React.Component {
 
     }
 
-    getData() {
-        request.get(this.props.url).then(response => {
-            this.setState({rows: response.data});
-            //console.log(response.data);
+    componentDidMount() {
+        axios.get(`${APIHOST}/api/usuarios`)
+
+            .then(response => {
+            this.setState({rows: response.data.usuarios});
+            console.log(response.data);
         })
             .catch(error => {
                 console.log(error);
