@@ -18,6 +18,7 @@ export default function AppRouter() {
                 <PrivateRoute exact path={["/admins"]} component={AdminBuscar} />
                 
                 
+                
 
                 <Route path="/*" component={() => (
                     <h1>
