@@ -1,16 +1,17 @@
 import React from "react"
 import "../../CSS/Admin.css" 
-import {Container} from "react-bootstrap"
+import {Button, Form} from "react-bootstrap"
 import {BrowserRouter as  Link} from 'react-router-dom';
 
  export default function Admin() {
     return (
         <div>
-            <div className="logout">
-                Cerrar sesion
-            </div>
+            
 
             <div className="contenedor-admin">
+                {/* <div className="logout">
+                     <button type="submit">Cerrar sesion</button>
+                </div> */}
                 <div className="propiedades">  
                     <div class="btn-group">
                         <ul className="slide">
@@ -19,29 +20,40 @@ import {BrowserRouter as  Link} from 'react-router-dom';
                             </Link>
                             <li><button>Operador</button></li>
                             <li><button>Registro Visitas</button></li>
+                            <li><button>Cerrar sesión</button></li>
                         </ul>
                     </div>
                 </div>
                 <div className="Title">
                     <h1><strong>Registrar Propiedades</strong></h1> 
                 </div>
-                <div className="Container-Pro">
-                    <Container className="Data-1">
-                        Nombre <input type="text"  placeholder="Torre/Bloque"/>
-                    </Container>
-                    <Container className="Data-2">
-                        Cédula <input type="text"  placeholder="Torre/Bloque"/>
-                    </Container>
-                    <Container className="Data-3">
-                        Celular <input type="text"  placeholder="Torre/Bloque"/> 
-                    </Container>
-                    <Container className="Data-4">
-                        Torre/Bloque <input type="text"  placeholder="Torre/Bloque"/>
-                    </Container>
-                    <Container className="Data-">
-                        Apartamento/Casa <input type="text"  placeholder="Torre/Bloque"/>
-                    </Container>
-                 </div>
+                <Form className="Container-Pro">
+
+                    <Form.Group className="field padding-bottom--24" controlId="formBasicEmail">
+                             <Form.Label className="elabel">Email address</Form.Label>
+                             <Form.Control className="boxsize" placeholder="Email" onChange={(e) => this.setState({ usuarios: e.target.value })} />
+                     </Form.Group>
+                     <Form.Group className="field padding-bottom--24" controlId="formBasicEmail">
+                             <Form.Label className="elabel">Email address</Form.Label>
+                             <Form.Control className="boxsize" placeholder="Email" onChange={(e) => this.setState({ usuarios: e.target.value })} />
+                    </Form.Group>
+                    <Form.Group className="field padding-bottom--24" controlId="formBasicEmail">
+                             <Form.Label className="elabel">Email address</Form.Label>
+                             <Form.Control className="boxsize" placeholder="Email" onChange={(e) => this.setState({ usuarios: e.target.value })} />
+                    </Form.Group>
+                    <Form.Group className="field padding-bottom--24" controlId="formBasicEmail">
+                             <Form.Label className="elabel">Email address</Form.Label>
+                             <Form.Control className="boxsize" placeholder="Email" onChange={(e) => this.setState({ usuarios: e.target.value })} />
+                    </Form.Group>
+                    <Form.Group className="field padding-bottom--24" controlId="formBasicEmail">
+                             <Form.Label className="elabel">Email address</Form.Label>
+                             <Form.Control className="boxsize" placeholder="Email" onChange={(e) => this.setState({ usuarios: e.target.value })} />
+                    </Form.Group>
+                    <Button type="Button">Enviar</Button>
+                 </Form>
+                 <div>
+                    <h3><strong>Propiedades Registradas</strong></h3> 
+                </div>
                 <div class="img"/>
             </div>
         </div>   

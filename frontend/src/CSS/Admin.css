@@ -10,7 +10,7 @@
     box-sizing: border-box;
     padding: 30px;
     position: relative;
-    border-radius: 10px;
+    border-radius: 3px;
     box-shadow: 0 3px 13px 1px rgb(0 0 0 / 9%);
     min-height: fit-content;
     max-height: fit-content;
@@ -65,17 +65,16 @@ ul{
 ul{
   padding-left: 0px;
 }
-.logout{
-    background-color: red;
-
-    border-radius: 20px;
-    width: 10%;
-    height: 3%;
+/* .logout{
     position: absolute;
     top: 5%;
     left: 92%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%)
     
+} */
+
+.Enviar{
+  background-color: #12166c;
 }
 
 a{
@@ -91,6 +90,17 @@ a{
     left: 22%;
     padding: 10px;
 }
+
+h3{
+    position: absolute;
+    top: 75%;
+    left: 22%;
+    padding: 10px;
+    background-color:#12166c;
+    color: white;
+    box-shadow: 0 3px 13px 1px rgb(0 0 0 / 9%);
+    border-radius: 5px;
+  }
 
 
 .img{ 
@@ -113,13 +123,11 @@ a{
    height: 400px;
    position: absolute;
    left: 20%;
-   bottom: 32%;
+   bottom: 35%;
    border-radius: 15px;
    
 }
-.Container-Pro{
- 
-}
+
 input{
   display: block;
   width: 500px;
