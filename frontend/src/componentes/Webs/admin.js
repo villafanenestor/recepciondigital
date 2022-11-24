@@ -1,9 +1,9 @@
 import React from "react"
 import "../../CSS/Admin.css" 
 import {Container} from "react-bootstrap"
+import {BrowserRouter as  Link} from 'react-router-dom';
 
-
- function Admin() {
+ export default function Admin() {
     return (
         <div>
             <div className="logout">
@@ -14,7 +14,9 @@ import {Container} from "react-bootstrap"
                 <div className="propiedades">  
                     <div class="btn-group">
                         <ul className="slide">
-                            <li><button>Propiedades</button></li>
+                            <Link to="/admins">
+                                <li><button>Propiedades</button></li>
+                            </Link>
                             <li><button>Operador</button></li>
                             <li><button>Registro Visitas</button></li>
                         </ul>
@@ -40,13 +42,10 @@ import {Container} from "react-bootstrap"
                         Apartamento/Casa <input type="text"  placeholder="Torre/Bloque"/>
                     </Container>
                  </div>
-                <div class="img">
-                </div>
+                <div class="img"/>
             </div>
         </div>   
     )
 }
    
 
-
-export default Admin;

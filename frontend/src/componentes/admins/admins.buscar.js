@@ -4,7 +4,7 @@ import './admins.buscar.css'
 import { Container, Row, } from "react-bootstrap"
 import DataGrid from '../grid/grid';
 
-const columns = [
+export const columns = [
     {
         dataField: '_id',
         text: 'ID',
