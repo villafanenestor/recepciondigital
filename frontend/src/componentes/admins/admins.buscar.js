@@ -50,8 +50,8 @@ export default class AdminBuscar extends React.Component {
 
         return (
             <Container id='admins-buscarcontainer'>
-                <Row>
-                    <h1>Buscar Conjuntos</h1>
+                <Row className='conjunto'>
+                    <h3>Buscar Conjuntos</h3>
                 </Row>
                 <Row>
                     <DataGrid url="/admins" columns={columns} />

@@ -17,16 +17,16 @@ export function getSession() {
 
 }
 
-// function renovarSesion() {
-//     const sesion = getSession();
-//     if (!sesion) window.location.href = "/login";
+function renovarSesion() {
+    const sesion = getSession();
+    if (!sesion) window.location.href = "/login";
 
-//     cookies.set("_s", sesion, {
-//         path: "/",
-//         expires: calcularExpiracionSesion(),
-//     });
-//     return sesion;
-// }
+    cookies.set("_s", sesion, {
+        path: "/",
+        expires: calcularExpiracionSesion(),
+    });
+    return sesion;
+}
 
 // export const request = {
 //     get: function (services) {

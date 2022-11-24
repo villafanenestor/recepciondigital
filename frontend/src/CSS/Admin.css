@@ -18,7 +18,7 @@
 
 .propiedades{
    width: 240px;
-   height: 700px;
+   height: 600px;
    background-color: #12166c;
    border-radius: 20px;
  
@@ -91,16 +91,16 @@ a{
     padding: 10px;
 }
 
-h3{
-    position: absolute;
-    top: 65%;
-    left: 22%;
-    padding: 10px;
+/* h3{
+    height: fit-content;
     background-color:#12166c;
     color: white;
     box-shadow: 0 3px 13px 1px rgb(0 0 0 / 9%);
     border-radius: 5px;
-  }
+    left: ;
+  } */
+
+
 
 
 .img{ 
@@ -110,7 +110,7 @@ h3{
     width:700px;
     height:700px;
 
-    top: -15%;
+    top: -5%;
     left: 52%;
     
   
@@ -155,9 +155,13 @@ input{
   height: 320px;
   position: absolute;
   left: 23%;
-  bottom: 47%;
+  top: 7%;
   border-radius: 15px;
   border: #12166c;
   box-shadow: 0 3px 13px 1px rgb(0 0 0 / 9%);
   
+}
+
+.b-prop{
+  position: relative;
 }

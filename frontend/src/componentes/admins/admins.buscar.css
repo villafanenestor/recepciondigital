@@ -29,3 +29,16 @@
 .sr-only{
     font-size: 0;
 }
+
+.conjunto{
+    background-color: blue;
+    position: relative;
+    align-items: center;
+    width: fit-content;
+    left:40%;
+    background-color:#12166c;
+    color: white;
+    box-shadow: 0 3px 13px 1px rgb(0 0 0 / 9%);
+    border-radius: 5px;
+    
+}

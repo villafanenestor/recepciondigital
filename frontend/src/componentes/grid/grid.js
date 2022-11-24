@@ -46,7 +46,7 @@ export default class DataGrid extends React.Component {
             >
                 {(props) => (
                     <div>
-                        <h2>Buscar datos</h2>
+                       
                         <SearchBar {...props.searchProps} />
                         <hr />
                         <PaginationProvider pagination={paginationFactory(options)}>
