@@ -87,8 +87,8 @@ a{
 
 .Title{
     position: absolute;
-    top: 10px;
-    left: 300px;
+    top: 15px;
+    left: 22%;
     padding: 10px;
 }
 
@@ -97,11 +97,11 @@ a{
     position: absolute;
     border-radius:5px;
    
-    width:200px;
-    height:200px;
+    width:500px;
+    height:500px;
 
-    top: -2%;
-    left: 87%;
+    top: 3%;
+    left: 60%;
     
   
     background:url(../images/receppng.png);
@@ -113,7 +113,7 @@ a{
    height: 400px;
    position: absolute;
    left: 20%;
-   bottom: 35%;
+   bottom: 32%;
    border-radius: 15px;
    
 }
@@ -124,7 +124,7 @@ input{
   display: block;
   width: 500px;
   height: 30px;
-  padding-left: 10px;
+  padding-left: 20px;
   padding-top: 3px;
   padding-bottom: 3px;
   margin: 7px;
