@@ -3,6 +3,7 @@ import "../../CSS/Admin.css"
 import {Button, Form} from "react-bootstrap"
 import {BrowserRouter as  Link} from 'react-router-dom';
 
+
  export default function Admin() {
     return (
         <div>
@@ -29,26 +30,27 @@ import {BrowserRouter as  Link} from 'react-router-dom';
                 </div>
                 <Form className="Container-Pro">
 
-                    <Form.Group className="field padding-bottom--24" controlId="formBasicEmail">
+                    <Form.Group className="field" controlId="formBasicEmail">
                              <Form.Label className="elabel">Email address</Form.Label>
                              <Form.Control className="boxsize" placeholder="Email" onChange={(e) => this.setState({ usuarios: e.target.value })} />
                      </Form.Group>
-                     <Form.Group className="field padding-bottom--24" controlId="formBasicEmail">
+                     <Form.Group className="field" controlId="formBasicEmail">
                              <Form.Label className="elabel">Email address</Form.Label>
                              <Form.Control className="boxsize" placeholder="Email" onChange={(e) => this.setState({ usuarios: e.target.value })} />
                     </Form.Group>
-                    <Form.Group className="field padding-bottom--24" controlId="formBasicEmail">
+                    <Form.Group className="field" controlId="formBasicEmail">
                              <Form.Label className="elabel">Email address</Form.Label>
                              <Form.Control className="boxsize" placeholder="Email" onChange={(e) => this.setState({ usuarios: e.target.value })} />
                     </Form.Group>
-                    <Form.Group className="field padding-bottom--24" controlId="formBasicEmail">
+                    <Form.Group className="field" controlId="formBasicEmail">
                              <Form.Label className="elabel">Email address</Form.Label>
                              <Form.Control className="boxsize" placeholder="Email" onChange={(e) => this.setState({ usuarios: e.target.value })} />
                     </Form.Group>
-                    <Form.Group className="field padding-bottom--24" controlId="formBasicEmail">
+                    <Form.Group className="field" controlId="formBasicEmail">
                              <Form.Label className="elabel">Email address</Form.Label>
                              <Form.Control className="boxsize" placeholder="Email" onChange={(e) => this.setState({ usuarios: e.target.value })} />
                     </Form.Group>
+                    <br></br>
                     <Button type="Button">Enviar</Button>
                  </Form>
                  <div>
