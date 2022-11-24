@@ -5,27 +5,31 @@ import { Container, Row, } from "react-bootstrap"
 import DataGrid from '../grid/grid';
 
 export const columns = [
-    {
-        dataField: '_id',
-        text: 'ID',
-        hidden: true,
-    },
+    // {
+    //     dataField: '_id',
+    //     text: 'ID',
+    //     hidden: true,
+    // },
     {
         dataField: 'nombre',
         text: 'Nombre',
     },
     {
-        dataField: 'email',
+        dataField: 'nit',
         text: 'Email',
     },
     {
-        dataField: 'rol',
+        dataField: 'direccion',
         text: 'Rol',
     },
     {
-        dataField: 'estado',
-        text: 'Estado',
-    }
+        dataField: 'cantidad_viviendas',
+        text: 'Cantidad de viviendas',
+    },
+    {
+        dataField: 'tipo_viviendas',
+        text: 'Tipo de viviendas',
+    },
     
 ];
 

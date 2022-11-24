@@ -26,7 +26,7 @@ export default class login extends React.Component {
 
     iniciarSesion() {
         this.setState({loading:true});
-        axios.post(`${APIHOST}/api/auth/login`, {
+        axios.post(`${APIHOST}/auth/login`, {
             email: this.state.usuarios,
             password: this.state.password,
         })
@@ -35,7 +35,7 @@ export default class login extends React.Component {
 
                 console.log(response);
                
-                    cookies.set('_s', response.data.tokenInformation.token, {
+                    cookies.set('_s', response.data.token, {
                         path: "/",
                         expires: calcularExpiracionSesion(),
                     });

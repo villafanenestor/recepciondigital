@@ -93,7 +93,7 @@ a{
 
 h3{
     position: absolute;
-    top: 75%;
+    top: 65%;
     left: 22%;
     padding: 10px;
     background-color:#12166c;
@@ -107,11 +107,11 @@ h3{
     position: absolute;
     border-radius:5px;
    
-    width:500px;
-    height:500px;
+    width:700px;
+    height:700px;
 
-    top: 3%;
-    left: 60%;
+    top: -15%;
+    left: 52%;
     
   
     background:url(../images/receppng.png);
@@ -151,11 +151,11 @@ input{
 }
 
 .Container-Pro{
-  width: 450px;
-  height: 400px;
+  width: 350px;
+  height: 300px;
   position: absolute;
   left: 23%;
-  bottom: 35%;
+  bottom: 47%;
   border-radius: 15px;
   border: #12166c;
   box-shadow: 0 3px 13px 1px rgb(0 0 0 / 9%);

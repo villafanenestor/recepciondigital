@@ -21,11 +21,12 @@ export default class DataGrid extends React.Component {
     }
 
     componentDidMount() {
-        axios.get(`${APIHOST}/api/usuarios`)
+        axios.get(`${APIHOST}/conjunto`)
 
             .then(response => {
-            this.setState({rows: response.data.usuarios});
+            this.setState({rows: response.data});
             console.log(response.data);
+            
         })
             .catch(error => {
                 console.log(error);
@@ -45,7 +46,7 @@ export default class DataGrid extends React.Component {
             >
                 {(props) => (
                     <div>
-                        <h3>Buscar datos</h3>
+                        <h2>Buscar datos</h2>
                         <SearchBar {...props.searchProps} />
                         <hr />
                         <PaginationProvider pagination={paginationFactory(options)}>

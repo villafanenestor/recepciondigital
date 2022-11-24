@@ -6,13 +6,14 @@ import Inicio from "../Webs/Inicio";
 import PrivateRoute from "../auth/privaterouter";
 import AdminBuscar from "../admins/admins.buscar";
 import Admin from "../Webs/admin";
+import Admin2 from "../Webs/admin2";
 
 export default function AppRouter() {
 
     return (
         <Router>
             <Switch>
-                <PrivateRoute exact path={["/Admin"]} component={Admin} />
+                <PrivateRoute exact path={["/Admin"]} component={Admin2} />
                 <PrivateRoute exact path={["/admins"]} component={AdminBuscar} />
                 <Route exact path={["/", "/login"]} component={Login} />
                 <Route exact path={["/Inicio"]} component={Inicio} />
