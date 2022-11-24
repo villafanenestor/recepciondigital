@@ -16,7 +16,7 @@ export const columns = [
     },
     {
         dataField: 'nit',
-        text: 'Email',
+        text: 'Nit',
     },
     {
         dataField: 'direccion',
@@ -51,7 +51,7 @@ export default class AdminBuscar extends React.Component {
         return (
             <Container id='admins-buscarcontainer'>
                 <Row>
-                    <h1>Buscar Admins</h1>
+                    <h1>Buscar Conjuntos</h1>
                 </Row>
                 <Row>
                     <DataGrid url="/admins" columns={columns} />

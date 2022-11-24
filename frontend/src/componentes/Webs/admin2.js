@@ -2,7 +2,7 @@ import React from "react";
 import axios from 'axios';
 import app from '../../app.json'
 import "../../CSS/Admin.css"
-import { Button, Form } from "react-bootstrap"
+import { Button, Form, } from "react-bootstrap"
 import { BrowserRouter as Link } from 'react-router-dom';
 
 
@@ -16,14 +16,14 @@ export default class Admin2 extends React.Component {
         super(props);
         this.state = {
             nombre: []
+
         }
     }
 
     componentDidMount() {
         axios.get(`${APIHOST}/conjunto`)
             .then(response => {
-                this.setState({ nombre: response.data});
-                const salchipapa = response.data
+                this.setState({ nombre: response.data });
             })
             .catch(error => {
                 console.log(error);
@@ -67,15 +67,15 @@ export default class Admin2 extends React.Component {
                             <Form.Control className="boxsize" placeholder="Cedula" onChange={(e) => this.setState({ usuarios: e.target.value })} />
                         </Form.Group>
                         <Form.Group className="field" >
-                            <select id="ddlViewBy">
-                                {this.state.nombre.map(elemento=>(
-                                    <option key={elemento.nombre} value={elemento.nombre}>{elemento.nombre}</option>    
-                                )
-                                )}
-                            </select>
+                            <Form.Label className="elabel">Seleccionar Apartamento</Form.Label>
+                            <Form.Select id="ddlViewBy" className="boxsize" >
+                                {this.state.nombre.map(elemento => (
+                                    <option key={elemento.nombre} value={elemento.nombre}>{elemento.nombre}</option>
+                                ))}
+                            </Form.Select>
                         </Form.Group>
 
-                        <Button type="Button">Enviar</Button>
+                        <Button type="Button">Crear Registro</Button>
                     </Form>
                     <div>
                         <h3><strong>Propiedades Registradas</strong></h3>
