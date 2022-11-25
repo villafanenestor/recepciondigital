@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from './navbar';
 import CrearV from '../grid/crearV';
+import { Row } from 'react-bootstrap';
 
 export const columns=[
     {
@@ -42,9 +43,9 @@ export default class Visitas extends React.Component {
                         <h1><strong>Registro de Visitas</strong></h1>
                     </div>
 
-                    <div className='busqueda'>
+                    <Row className='busqueda'>
                         <CrearV url="/Rvisitas" columns={columns}/>
-                    </div>
+                    </Row>
 
                 </div>
             </div>

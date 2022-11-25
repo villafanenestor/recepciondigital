@@ -1,5 +1,5 @@
 import React from 'react';
-import { Nav, Row } from 'react-bootstrap'; 
+import { Nav} from 'react-bootstrap'; 
 import Logout from '../login/logout';
 
 export default class Navbar extends React.Component {
@@ -12,8 +12,8 @@ export default class Navbar extends React.Component {
 
     render() {
         return (
-            <Row>
-                <div className="propiedades" defaultActiveKey="/Admin">
+            
+                <div className="propiedades">
                     <div class="btn-group">
                         <ul className="slide ">
                             <Nav.Item>
@@ -30,7 +30,6 @@ export default class Navbar extends React.Component {
                         </ul>
                     </div>
                 </div>
-            </Row>
         );
     }
 }
