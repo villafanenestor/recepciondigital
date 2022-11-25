@@ -1,6 +1,8 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Login from "../login/login";
+import Operador from "../Webs/operador";
+import Visitas from "../Webs/visitas";
 // import Admin from "../Webs/admin";
 //import Inicio from "../Webs/Inicio";
 import PrivateRoute from "../auth/privaterouter";
@@ -16,7 +18,8 @@ export default function AppRouter() {
                 <PrivateRoute exact path={["/Admin"]} component={Admin2} />
                 <PrivateRoute exact path={["/admins"]} component={AdminBuscar} />     
                 <Route exact path={["/", "/login"]} component={Login} />
-
+                <PrivateRoute exact path={["/operador"]} component={Operador} />
+                <PrivateRoute exact path={["/Rvisitas"]} component={Visitas} />
                 
 
                 <Route path="/*" component={() => (

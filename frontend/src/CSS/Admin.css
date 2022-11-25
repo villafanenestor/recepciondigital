@@ -162,6 +162,26 @@ input{
   
 }
 
+.Container-Op{
+  width: 350px;
+  height: 160px;
+  position: absolute;
+  left: 23%;
+  top: 15%;
+  border-radius: 15px;
+  border: #12166c;
+  box-shadow: 0 3px 13px 1px rgb(0 0 0 / 9%);
+  
+}
+
 .b-prop{
   position: relative;
+}
+
+.busqueda{
+  position: relative;
+  left: 20%;
+  top: 80%;
+  width: 80%;
+  z-index: static;
 }
