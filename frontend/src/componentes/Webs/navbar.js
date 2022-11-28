@@ -17,7 +17,7 @@ export default class Navbar extends React.Component {
                     <div class="btn-group">
                         <ul className="slide ">
                             <Nav.Item>
-                                <li><button><Nav.Link href="/Admin">Propiedades</Nav.Link></button></li>
+                                <li><button><Nav.Link href="/propiedades">Propiedades</Nav.Link></button></li>
                             </Nav.Item>
                             <Nav.Item>
                                 <li><button><Nav.Link href="/Operador">Operador</Nav.Link></button></li>

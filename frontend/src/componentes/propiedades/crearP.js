@@ -3,7 +3,7 @@ import { Form, Button} from 'react-bootstrap';
 import Select from '../Webs/selectinfo';
 
 
-export default class Propiedades extends React.Component {
+export default class CrearPropiedades extends React.Component {
     constructor(props) {
         super(props);
         this.state = {

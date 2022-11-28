@@ -1,24 +1,47 @@
 import React from "react";
-import axios from 'axios';
-import app from '../../app.json'
+//import axios from 'axios';
+//import app from '../../app.json'
 import "../../CSS/Admin.css"
-import { Button, Form, Nav, Row } from "react-bootstrap"
+//import { Button, Form, Nav, Row } from "react-bootstrap"
 //import { BrowserRouter as Link } from 'react-router-dom';
-import Propiedades from "../grid/crearP";
+import Propiedades from "./crearP";
 import AdminBuscar from "../admins/admins.buscar";
-import Navbar from "./navbar";
+import Navbar from "../Webs/navbar";
 
-const { APIHOST } = app
+//const { APIHOST } = app
 
 
-export default class Admin2 extends React.Component {
+export const columns = [
+    {
+        dataField: '_id',
+        text: 'ID',
+        hidden: true,
+    },
+    {
+        dataField: 'nombre',
+        text: 'Nombre',
+    },
+    {
+        dataField: 'id_edificio',
+        text: 'ID del edificio',
+    },
+    {
+        dataField: 'id_propietario',
+        text: 'ID del propietario',
+    },
+    
+
+];
+
+
+export default class Propiedades1 extends React.Component {
 
 
     constructor(props) {
         super(props);
         this.state = {
 
-
+            
         }
     }
 
@@ -29,13 +52,13 @@ export default class Admin2 extends React.Component {
 
 
                 <div className="contenedor-admin">
-                    <Navbar />
+                    <Navbar/>
 
                     <div className="Title">
                         <h1><strong>Registrar Propiedades</strong></h1>
                     </div>
-                    
                     <Propiedades />
+
                     <div className="b-prop">
                         <AdminBuscar />
                     </div>

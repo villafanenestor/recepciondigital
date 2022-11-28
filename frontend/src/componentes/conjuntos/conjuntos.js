@@ -1,8 +1,8 @@
 import React from 'react';
-import './admins.buscar.css'
+
 //import { request } from '../helper/helper'
 import { Container, Row, } from "react-bootstrap"
-import DataGrid from '../conjuntos/gridConjuntos';
+import DataGrid from './gridConjuntos';
 
 export const columns = [
     // {
@@ -22,20 +22,13 @@ export const columns = [
         dataField: 'direccion',
         text: 'Rol',
     },
-    {
-        dataField: 'cantidad_viviendas',
-        text: 'Cantidad de viviendas',
-    },
-    {
-        dataField: 'tipo_viviendas',
-        text: 'Tipo de viviendas',
-    },
     
+
 ];
 
 
 
-export default class AdminBuscar extends React.Component {
+export default class Conjuntos extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -50,9 +43,6 @@ export default class AdminBuscar extends React.Component {
 
         return (
             <Container id='admins-buscarcontainer'>
-                <Row className='conjunto'>
-                    <h3>Buscar Propiedades</h3>
-                </Row>
                 <Row>
                     <DataGrid url="/admins" columns={columns} />
                 </Row>
