@@ -11,7 +11,7 @@ const { APIHOST } = app
 const { SearchBar } = Search;
 
 
-export default class gridPropiedades extends React.Component {
+export default class GridPropiedades extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -22,7 +22,7 @@ export default class gridPropiedades extends React.Component {
     }
 
     componentDidMount() {
-        axios.get(`${APIHOST}/conjunto`)
+        axios.get(`${APIHOST}/apartamento`)
 
             .then(response => {
             this.setState({rows: response.data});

@@ -20,16 +20,9 @@ export const columns = [
     },
     {
         dataField: 'direccion',
-        text: 'Rol',
+        text: 'direccion',
     },
-    {
-        dataField: 'cantidad_viviendas',
-        text: 'Cantidad de viviendas',
-    },
-    {
-        dataField: 'tipo_viviendas',
-        text: 'Tipo de viviendas',
-    },
+ 
     
 ];
 
@@ -54,7 +47,7 @@ export default class AdminBuscar extends React.Component {
                     <h3>Buscar Propiedades</h3>
                 </Row>
                 <Row>
-                    <DataGrid url="/admins" columns={columns} />
+                    <DataGrid columns={columns} />
                 </Row>
             </Container>
         );

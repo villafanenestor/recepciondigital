@@ -44,7 +44,7 @@ export default class Conjuntos extends React.Component {
         return (
             <Container id='admins-buscarcontainer'>
                 <Row>
-                    <DataGrid url="/admins" columns={columns} />
+                    <DataGrid columns={columns} />
                 </Row>
             </Container>
         );

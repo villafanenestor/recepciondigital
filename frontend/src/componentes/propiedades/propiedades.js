@@ -7,6 +7,7 @@ import "../../CSS/Admin.css"
 import Propiedades from "./crearP";
 import AdminBuscar from "../admins/admins.buscar";
 import Navbar from "../Webs/navbar";
+import GridPropiedades from "./gridPropiedades";
 
 //const { APIHOST } = app
 
@@ -15,20 +16,19 @@ export const columns = [
     {
         dataField: '_id',
         text: 'ID',
-        hidden: true,
     },
     {
         dataField: 'nombre',
         text: 'Nombre',
     },
-    {
-        dataField: 'id_edificio',
-        text: 'ID del edificio',
-    },
-    {
-        dataField: 'id_propietario',
-        text: 'ID del propietario',
-    },
+    // {
+    //     dataField: 'id_edificio',
+    //     text: 'ID del edificio',
+    // },
+    // {
+    //     dataField: 'id_propietario',
+    //     text: 'ID del propietario',
+    // },
     
 
 ];
@@ -60,7 +60,7 @@ export default class Propiedades1 extends React.Component {
                     <Propiedades />
 
                     <div className="b-prop">
-                        <AdminBuscar />
+                        <GridPropiedades columns={columns} />
                     </div>
                     <div class="img" />
                 </div>
