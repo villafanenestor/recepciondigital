@@ -29,9 +29,8 @@ export const columns = [
     //     dataField: 'id_propietario',
     //     text: 'ID del propietario',
     // },
-    
-
 ];
+
 
 
 export default class Propiedades1 extends React.Component {

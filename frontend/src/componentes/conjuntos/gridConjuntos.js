@@ -24,7 +24,7 @@ export default class DataGrid extends React.Component {
         axios.get(`${APIHOST}/conjunto`)
 
             .then(response => {
-            this.setState({rows: response.data.map()});
+            this.setState({rows: response.data});
             console.log(response.data);
             
         })

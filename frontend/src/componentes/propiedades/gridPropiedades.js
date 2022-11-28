@@ -11,12 +11,14 @@ const { APIHOST } = app
 const { SearchBar } = Search;
 
 
+
 export default class GridPropiedades extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            rows: []
+            rows: [
 
+            ],
         }
 
     }
@@ -26,7 +28,7 @@ export default class GridPropiedades extends React.Component {
 
             .then(response => {
             this.setState({rows: response.data});
-            console.log(response.data);
+            console.log(response);
             
         })
             .catch(error => {
@@ -38,6 +40,7 @@ export default class GridPropiedades extends React.Component {
             custom: true,
             totalSize: this.state.rows.length
         };
+
         return (
             <ToolkitProvider
                 keyField="tp"
